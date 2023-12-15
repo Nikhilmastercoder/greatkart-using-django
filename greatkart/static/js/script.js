@@ -7,11 +7,11 @@ $(document).ready(function() {
 
     /* ///////////////////////////////////////
 
-    THESE FOLLOWING SCRIPTS ONLY FOR BASIC USAGE, 
+    THESE FOLLOWING SCRIPTS ONLY FOR BASIC USAGE,
     For sliders, interactions and other
 
     */ ///////////////////////////////////////
-    
+
 
 	//////////////////////// Prevent closing from click inside dropdown
     $(document).on('click', '.dropdown-menu', function (e) {
@@ -44,17 +44,14 @@ $(document).ready(function() {
         }
     });
 
-
-
 	//////////////////////// Bootstrap tooltip
 	if($('[data-toggle="tooltip"]').length>0) {  // check if element exists
 		$('[data-toggle="tooltip"]').tooltip()
 	} // end if
 
-
-
-
-    
-}); 
+});
 // jquery end
 
+setTimeout(function(){
+  $('#message').fadeOut('slow')
+}, 4000)
